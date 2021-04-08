@@ -40,6 +40,32 @@ bool isPalindrome2(struct ListNode* head) {
     return true;
 }
 
+//bool isPalindrome3(struct ListNode* head) {
+//    struct ListNode* fast = head;
+//    struct ListNode* slow = head;
+//    struct ListNode* tmp = NULL;
+//    struct ListNode* rev = NULL;
+//    int flag = 0;
+//    while (slow != NULL) {
+//        tmp->next = slow;
+//
+//
+//        slow = slow->next;
+//        if (fast->next != NULL) {
+//            fast = fast->next->next;
+//        }
+//
+//        if (fast == NULL || fast->next == NULL) {
+//            flag = 1;
+//            fast = head;
+//        }
+//
+//        if (flag) {
+//
+//        }
+//    }
+//}
+
 void runIsPalindrome() {
     int nums[] = {2, 2, 1};
     int length = sizeof(nums) / sizeof(int);

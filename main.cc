@@ -183,10 +183,10 @@ int main() {
 //    cout << "__DATE__ => " << __DATE__ << endl;
 //    cout << "__TIME__ => " << __TIME__ << endl;
 //
-//    runIsPalindrome();
+    runIsPalindrome();
 //    runDeleteNode();
 //    runIntersectLinkedList();
-    runCovertLinkedToNumber();
+//    runCovertLinkedToNumber();
 
     return 0;
 }
