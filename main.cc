@@ -24,6 +24,7 @@
 #include "palindrome_linked_list.h"
 #include "delete_current_node.h"
 #include "intersect_node_for_two_linked_list.h"
+#include "covert_linked_to_number.h"
 
 using namespace std;
 
@@ -184,8 +185,8 @@ int main() {
 //
 //    runIsPalindrome();
 //    runDeleteNode();
-    runIntersectLinkedList();
-
+//    runIntersectLinkedList();
+    runCovertLinkedToNumber();
 
     return 0;
 }

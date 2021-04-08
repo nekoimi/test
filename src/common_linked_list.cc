@@ -41,6 +41,19 @@ struct ListNode* reversal_iteration(struct ListNode* head) {
     return head;
 }
 
+// 一次遍历源地反转
+struct ListNode *reverse_one_each(struct ListNode *head) {
+    struct ListNode* fast = head;
+    struct ListNode* slow = NULL;
+    while (fast != NULL) {
+        struct ListNode* next = fast->next;
+        fast->next = slow;
+        slow = fast;
+        fast = next;
+    }
+    return slow;
+}
+
 void printLinkedList(struct ListNode *head) {
     while (head != NULL) {
         printf("%d -> ", head->val);
