@@ -15,7 +15,6 @@
 #include "ci_single_number.h"
 #include "ci_quick_sort.h"
 #include "ci_queue.h"
-#include "ci_reverse_linked_list_ii.h"
 #include "ci_kth_node.h"
 #include "ci_binary_tree.h"
 #include "get_link_node_end.h"
@@ -25,6 +24,7 @@
 #include "delete_current_node.h"
 #include "intersect_node_for_two_linked_list.h"
 #include "covert_linked_to_number.h"
+#include "remove_duplicates_node.h"
 
 using namespace std;
 
@@ -183,10 +183,11 @@ int main() {
 //    cout << "__DATE__ => " << __DATE__ << endl;
 //    cout << "__TIME__ => " << __TIME__ << endl;
 //
-    runIsPalindrome();
+//    runIsPalindrome();
 //    runDeleteNode();
 //    runIntersectLinkedList();
 //    runCovertLinkedToNumber();
+    runRemoveDuplicatesNode();
 
     return 0;
 }
