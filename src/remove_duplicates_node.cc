@@ -57,14 +57,41 @@ int *reversePrint2(struct ListNode *head, int *returnSize) {
     return res;
 }
 
+class Solution {
+public:
+    ListNode *removeDuplicateNodes(ListNode *head) {
+        if (head == NULL) {
+            return head;
+        }
+        std::map<int, int> hashMap;
+        ListNode *p = head;
+        while (p->next != NULL) {
+            if (hashMap.end() == hashMap.find(p->val)) {
+                hashMap.insert(std::map<int, int>::value_type(p->val, 1));
+                p = p->next;
+            } else {
+                p->val = p->next->val;
+                p->next = p->next->next;
+            }
+        }
+        return head;
+    }
+};
+
 void runRemoveDuplicatesNode() {
     struct ListNode *head = newLinkedList(1);
     struct ListNode *node = head;
     node = insert(node, 1);
     node = insert(node, 2);
     node = insert(node, 2);
-    insert(node, 9);
+    node = insert(node, 9);
+    node = insert(node, 2);
+    node = insert(node, 2);
     printLinkedList(head);
-    head = deleteDuplicates(head);
+//    head = deleteDuplicates(head);
+//    printLinkedList(head);
+
+    Solution *s = new Solution;
+    head = s->removeDuplicateNodes(head);
     printLinkedList(head);
 }

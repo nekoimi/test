@@ -25,6 +25,7 @@
 #include "intersect_node_for_two_linked_list.h"
 #include "covert_linked_to_number.h"
 #include "remove_duplicates_node.h"
+#include "swap_linked_node.h"
 
 using namespace std;
 
@@ -187,7 +188,8 @@ int main() {
 //    runDeleteNode();
 //    runIntersectLinkedList();
 //    runCovertLinkedToNumber();
-    runRemoveDuplicatesNode();
+//    runRemoveDuplicatesNode();
+    runSwapLinkedNode();
 
     return 0;
 }
