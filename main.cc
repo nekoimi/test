@@ -26,6 +26,7 @@
 #include "covert_linked_to_number.h"
 #include "remove_duplicates_node.h"
 #include "swap_linked_node.h"
+#include "partition_list.h"
 
 using namespace std;
 
@@ -189,7 +190,8 @@ int main() {
 //    runIntersectLinkedList();
 //    runCovertLinkedToNumber();
 //    runRemoveDuplicatesNode();
-    runSwapLinkedNode();
+//    runSwapLinkedNode();
+    runPartitionList();
 
     return 0;
 }
