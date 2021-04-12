@@ -16,6 +16,7 @@ struct ListNode *newLinkedList(int val);
 struct ListNode *insert(struct ListNode *node, int val);
 struct ListNode *reversal_iteration(struct ListNode *head);
 struct ListNode *reverse_one_each(struct ListNode *head);
+struct ListNode* reverse_recursion(struct ListNode* node);
 void printLinkedList(struct ListNode *head);
 
 

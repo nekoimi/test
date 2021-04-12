@@ -54,6 +54,17 @@ struct ListNode *reverse_one_each(struct ListNode *head) {
     return slow;
 }
 
+// 递归反转
+struct ListNode* reverse_recursion(struct ListNode* head) {
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+    struct ListNode* next = reverse_recursion(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return next;
+}
+
 void printLinkedList(struct ListNode *head) {
     while (head != NULL) {
         printf("%d -> ", head->val);
