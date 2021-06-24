@@ -5,7 +5,7 @@
 #include "merge_sorted_array.h"
 
 void do_quick_sort(int *arr, int start, int end) {
-    int i, j , stand;
+    int i, j, stand;
     // Here must be need check start/end default value!
     if (start > end) {
         return;
@@ -39,7 +39,7 @@ void do_quick_sort(int *arr, int start, int end) {
     do_quick_sort(arr, i + 1, end);
 }
 
-void merge(int *nums1, int nums1Size, int m, int *nums2, int nums2Size, int n) {
+void merge_method1(int *nums1, int nums1Size, int m, int *nums2, int nums2Size, int n) {
     int length = m + n;
     for (int j = 0; j < n; ++j) {
         nums1[m + j] = nums2[j];
@@ -54,9 +54,19 @@ void merge(int *nums1, int nums1Size, int m, int *nums2, int nums2Size, int n) {
     }
 }
 
+void merge_method2(int *nums1, int nums1Size, int m, int *nums2, int nums2Size, int n) {
+    int p1 = 0, p2 = 0, length = m + n;
+    int sorted[length];
+
+    for (int j = 0; j < length; ++j) {
+        printf("n1->%d: %d \n", j, sorted[j]);
+    }
+}
+
 void run_merge() {
-    int n1[7] = {9, 37, 23, 0, 0, 0, 0};
-    int n2[3] = {10, 2, 0};
-    merge(n1, 7, 3, n2, 2, 2);
+    int n1[7] = {9, 23, 37, 0, 0, 0, 0};
+    int n2[3] = {2, 10, 0};
+//    merge_method1(n1, 7, 3, n2, 2, 2);
+    merge_method2(n1, 7, 3, n2, 2, 2);
 }
 
