@@ -64,7 +64,7 @@ void printBinTree(struct BinTreeNode *binTree) {
 
 class Student {
 public:
-    char *username;
+    string username;
     int age;
     float score;
 

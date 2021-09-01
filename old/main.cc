@@ -5,30 +5,31 @@
 #include <iostream>
 #include <exception>
 #include <vector>
-#include "src/ci_helloworld.h"
-#include "src/ci_maximum_subarray.h"
-#include "src/ci_length_of_last_word.h"
-#include "src/ci_plus_one.h"
-#include "src/ci_add_binary.h"
-#include "src/ci_sqrtx.h"
-#include "src/ci_number_of_bites.h"
-#include "src/ci_single_number.h"
-#include "src/ci_quick_sort.h"
-#include "src/ci_queue.h"
-#include "src/ci_kth_node.h"
-#include "src/ci_binary_tree.h"
-#include "src/get_link_node_end.h"
-#include "src/delete_middle_node.h"
-#include "src/merge_two_sorted_link_list.h"
-#include "src/palindrome_linked_list.h"
-#include "src/delete_current_node.h"
-#include "src/intersect_node_for_two_linked_list.h"
-#include "src/covert_linked_to_number.h"
-#include "src/remove_duplicates_node.h"
-#include "src/swap_linked_node.h"
-#include "src/partition_list.h"
-#include "src/reverse_list_by_between.h"
-#include "src/merge_sorted_array.h"
+#include "old/ci_helloworld.h"
+#include "old/ci_maximum_subarray.h"
+#include "old/ci_length_of_last_word.h"
+#include "old/ci_plus_one.h"
+#include "old/ci_add_binary.h"
+#include "old/ci_sqrtx.h"
+#include "old/ci_number_of_bites.h"
+#include "old/ci_single_number.h"
+#include "old/ci_quick_sort.h"
+#include "old/ci_queue.h"
+#include "old/ci_kth_node.h"
+#include "old/ci_binary_tree.h"
+#include "old/get_link_node_end.h"
+#include "old/delete_middle_node.h"
+#include "old/merge_two_sorted_link_list.h"
+#include "old/palindrome_linked_list.h"
+#include "old/delete_current_node.h"
+#include "old/intersect_node_for_two_linked_list.h"
+#include "old/covert_linked_to_number.h"
+#include "old/remove_duplicates_node.h"
+#include "old/swap_linked_node.h"
+#include "old/partition_list.h"
+#include "old/reverse_list_by_between.h"
+#include "old/merge_sorted_array.h"
+#include "src/island_perimeter.h"
 
 using namespace std;
 
@@ -63,8 +64,8 @@ int main() {
 //    runSwapLinkedNode();
 //    runPartitionList();
 //    runReverseListByBetween();
-    run_merge();
-
+//    run_merge();
+    do_island_perimeter();
 
     return 0;
 }
