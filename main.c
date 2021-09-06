@@ -4,11 +4,12 @@
 #include <stdio.h>
 #include "island_perimeter.h"
 #include "reshape_matrix.h"
-#include "list_table/ls_struct.h"
-#include "tree/tree_struct.h"
+#include "binary_search.h"
+#include "first_bad_version.h"
+#include "search_insert.h"
 
 int main() {
-    binary_tree_node();
+    do_search_insert();
     printf("Hello World! \n");
     return 0;
 }

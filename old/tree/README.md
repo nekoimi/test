@@ -7,6 +7,6 @@
 
 - 当用 n 个结点（都做叶子结点且都有各自的权值）试图构建一棵树时，如果构建的这棵树的带权路径长度最小，称这棵树为“最优二叉树”，有时也叫“赫夫曼树”或者“哈夫曼树”。
 
-![](img.png)
+![](Developer/cpp_projects/Nekoimi/brush_test/old/tree/img.png)
 
 ### 哈夫曼编码
