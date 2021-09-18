@@ -9,9 +9,10 @@
 #include "search_insert.h"
 #include "squares_of_sorted_array.h"
 #include "rotate_array.h"
+#include "move_zeroes.h"
 
 int main() {
-    do_rotate();
+    do_move_zero();
     printf("\nHello World! \n");
     return 0;
 }
