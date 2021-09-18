@@ -11,6 +11,6 @@
 
 int main() {
     do_sorted_squares();
-    printf("Hello World! \n");
+    printf("\nHello World! \n");
     return 0;
 }
