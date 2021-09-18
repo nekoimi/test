@@ -7,9 +7,10 @@
 #include "binary_search.h"
 #include "first_bad_version.h"
 #include "search_insert.h"
+#include "squares_of_sorted_array.h"
 
 int main() {
-    do_search_insert();
+    do_sorted_squares();
     printf("Hello World! \n");
     return 0;
 }
