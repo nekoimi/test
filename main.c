@@ -10,9 +10,10 @@
 #include "squares_of_sorted_array.h"
 #include "rotate_array.h"
 #include "move_zeroes.h"
+#include "contains_duplicate.h"
 
 int main() {
-    do_move_zero();
+    do_contains_duplicate();
     printf("\nHello World! \n");
     return 0;
 }
